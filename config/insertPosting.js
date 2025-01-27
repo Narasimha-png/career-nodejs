@@ -1,6 +1,6 @@
 import pool from "./pool.js";
 
-const insertPreparedStatement = 'insert into OpenPostings (name , number_of_openings , status ,skills, work_location, eligibility,compensation , imp_note , responsibilities) values (?, ? , ? , ? , ? , ?, ? , ? , ?) ' ;
+const insertPreparedStatement = 'insert into openpostings (name , number_of_openings , status ,skills, work_location, eligibility,compensation , imp_note , responsibilities) values (?, ? , ? , ? , ? , ?, ? , ? , ?) ' ;
 
 const insertPosting = async ({name , number_of_openings , status ,skills, work_location, eligibility,
      compensation , imp_note , responsibilities} )=>{
@@ -8,7 +8,7 @@ const insertPosting = async ({name , number_of_openings , status ,skills, work_l
     const insertQuery = [name , number_of_openings , status ,skillsString, work_location, eligibility,
         compensation , imp_note , responsibilities] ;
         console.log(insertQuery) ;
-    return new Promise((revoke , resolve)=>{
+    return new Promise((resolve , revoke)=>{
         pool.query(insertPreparedStatement , insertQuery , (err , results)=>{
             if( err )
             revoke(err) ;

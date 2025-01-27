@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "express-fileupload": "^1.5.1",
     "fs": "^0.0.1-security",
     "middleware": "^1.0.0",
     "mysql": "^2.18.1",

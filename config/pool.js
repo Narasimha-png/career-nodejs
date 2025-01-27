@@ -4,10 +4,10 @@ import path from 'path' ;
 import { fileURLToPath } from 'url';
 
 const pool = mysql.createPool({
-    host: "127.0.0.1",
+    host: "catalog.cbgmeug4kzhp.eu-north-1.rds.amazonaws.com",
     port: 3306,
-    user: "catalog",
-    password: "catalog@123",
+    user: "root",
+    password: "Narasimha#2004",
     database: "career",
     connectionLimit: 10
 });
