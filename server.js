@@ -11,13 +11,8 @@ dotenv.config();
 
 App.use(fileUpload());
 
-const corsOptions = {
-    origin: '*',
-    credentials: true,
-};
 
-
-App.use(cors(corsOptions)) ;
+App.use(cors()) ;
 
 App.use(express.json());
 
