@@ -22,7 +22,7 @@ export async function getObjectURL(key) {
  }
 
  export async function putObjectURL(file, key) {
-    const uniqueKey = `${Date.now()}-${key}`;
+    const uniqueKey = file.name;
     const command = new PutObjectCommand({
         Bucket: process.env.BUCKET,
         Key: uniqueKey,
