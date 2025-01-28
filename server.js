@@ -11,8 +11,12 @@ dotenv.config();
 
 App.use(fileUpload());
 
+const corsOptions = {
+    origin: 'https://careercatalog.netlify.app/', 
+    credentials: true,               
+  };
 
-App.use(cors()) ;
+App.use(cors(corsOptions)) ;
 
 App.use(express.json());
 
