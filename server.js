@@ -14,6 +14,9 @@ App.use(cors());
 
 
 
+console.log(process.env.BUCKET);
+console.log(process.env.ACCESS_KEY) ;
+console.log(process.env.SECRET_KEY) ;
 
 
 App.use(express.json());
