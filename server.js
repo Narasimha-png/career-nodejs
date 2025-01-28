@@ -12,7 +12,7 @@ dotenv.config();
 App.use(fileUpload());
 
 const corsOptions = {
-    origin: 'https://careercatalog.netlify.app/', 
+    origin: '*', 
     credentials: true,               
   };
 
